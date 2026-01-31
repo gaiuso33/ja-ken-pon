@@ -1,5 +1,98 @@
-/* * {
+/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
+
+/* Page layout */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+/* Welcome text */
+#userName {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#selection {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+#round {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Buttons */
+#selection button {
+    width: 220px;
+    padding: 12px 16px;
+    border: 2px solid #111;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#selection button:hover {
+    transform: translateY(-1px);
+}
+
+/* Game results */
+#game {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    padding: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+#human,
+#computer,
+#scores,
+#winner {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+#winner {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.refresh-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 18px;
+    border: 2px solid #111;
+    background: #111;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.refresh-btn:hover {
+    opacity: 0.9;
+}
+
